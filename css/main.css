@@ -1,9 +1,15 @@
+/*HTML Page Style*/
 *{
 	box-sizing:border-box; 
+}
+a{
+	text-decoration:none;
 }
 html{
 	font-family: sans-serif;
 }
+
+/*Header Style*/
 header{
 	background: #3B5998;
 	color: #E5E9F1;
@@ -14,7 +20,6 @@ header a{
 	font-size:12px;
 	font-weight:300;
 	text-decoration:none;
-	
 }
 header .fa{
 	color:white;
@@ -73,3 +78,150 @@ header .search-area{
 header .search-area ul li {
 	display: inline-block;
 }
+
+/*Top-Area Style*/
+#top-area{
+	padding:200px 15px 90px 15px;
+	background: url(https://i1.wp.com/technovagh.com/wp-content/uploads/2017/04/social-media-wallpaper.jpg?ssl=1) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+#top-area .profile-info .user-img{
+	display: inline-block;
+	padding: 10px;
+}
+#top-area .profile-info .user-img img{
+	border-radius:50%;
+}
+#top-area .profile-info .user-name{
+	display: inline-block;
+	vertical-align: top;
+}
+#top-area .profile-info .user-name h3{
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom:10px;
+}
+#top-area .profile-info .user-name a{
+	background: rgba(255,255,255, .3);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-left: -4px;
+	margin-right:5%;
+	text-align: center;
+	color:white;
+	font-size: 9px;
+	padding: 10px;
+	text-transform: uppercase;
+	width: 45%;
+	transition: background .3s ease-in-out;
+}
+#top-area .profile-info .user-name a:hover{
+	background: #63ACED;
+}
+
+/*Content-Area*/
+/*Side Column*/
+#content-area{
+	background:#FAFAFA;
+	overflow: auto;
+	padding: 50px 0;
+}
+#content-area .side-col{
+	float: left; 
+	margin: 0 2.5%;
+	width: 35%;
+	max-width:380px;
+}
+#content-area .widget-box{
+	background: white;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 2px 5px -1px rgba(138,135,138,0.75);
+	-moz-box-shadow: 0px 2px 5px -1px rgba(138,135,138,0.75);
+	box-shadow: 0px 2px 5px -1px rgba(138,135,138,0.75);
+	margin:0 0 15px 0;
+	overflow: auto;
+	padding: 15px;
+}
+#content-area .widget-box .head  .widget-icon-container{
+	display:inline-block;
+}
+#content-area .widget-box .head  .widget-icon{
+	background:#BFBFBF;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+	height:40px;	
+	width: 40px;
+	
+}
+#content-area .widget-box .head  .widget-icon a{
+	max-width:50%;
+	/* max-height:50%; */
+	font-size:30px;
+}
+#content-area .widget-box .head .widget-title{
+	display:inline-block;
+	padding: 0 0 0 10px;
+}
+#content-area .widget-box .body{
+	padding:20px 0;
+}
+/*Main-Area*/
+#content-area .main-area{
+	float: left;
+	margin: 0 2.5%;
+	width: 55%;
+}
+#content-area .main-area  .submenu{
+	padding:0;
+	margin: 0;
+	margin: 0 0 20px 0;
+}
+#content-area .main-area .submenu ul{
+	padding:0;
+}
+#content-area .main-area .submenu ul li{
+	
+	display:inline-block;
+	width:20%; 
+	float:left;
+	text-align: center;
+	padding:10px;
+	border-bottom:3px solid white;
+	transition: all .3s ease-in-out;
+	cursor:pointer;
+	
+}
+#content-area .main-area .submenu ul li:nth-child(5){
+	
+	padding:28px 0 21px;	
+}
+#content-area .main-area .submenu ul li span{
+	display:block;
+	margin:15px 0 0 0;
+	font-size:14px;
+	text-transform:uppercase;
+}
+#content-area .main-area .submenu ul li:hover{
+	border-bottom: 3px solid #63ACED; 
+	color:#63ACED;
+}
+
+#content-area .main-area .submenu ul li .fa{
+	font-size:20px;
+}
+
+
+
+
+
