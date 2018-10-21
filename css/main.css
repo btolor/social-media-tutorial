@@ -1,9 +1,14 @@
-/*HTML Page Style*/
+/*Html-Page*/
 *{
 	box-sizing:border-box; 
 }
 a{
 	text-decoration:none;
+	color: #63ACED;
+	transition: all .2s ease-in-out;
+}
+a:hover{
+	color:red;
 }
 html{
 	font-family: sans-serif;
@@ -162,7 +167,6 @@ header .search-area ul li {
 	align-items: center; /* align vertical */
 	height:40px;	
 	width: 40px;
-	
 }
 #content-area .widget-box .head  .widget-icon a{
 	max-width:50%;
@@ -177,6 +181,7 @@ header .search-area ul li {
 	padding:20px 0;
 }
 /*Main-Area*/
+/*Sub-Menu*/
 #content-area .main-area{
 	float: left;
 	margin: 0 2.5%;
@@ -191,7 +196,6 @@ header .search-area ul li {
 	padding:0;
 }
 #content-area .main-area .submenu ul li{
-	
 	display:inline-block;
 	width:20%; 
 	float:left;
@@ -200,10 +204,8 @@ header .search-area ul li {
 	border-bottom:3px solid white;
 	transition: all .3s ease-in-out;
 	cursor:pointer;
-	
 }
 #content-area .main-area .submenu ul li:nth-child(5){
-	
 	padding:28px 0 21px;	
 }
 #content-area .main-area .submenu ul li span{
@@ -216,10 +218,226 @@ header .search-area ul li {
 	border-bottom: 3px solid #63ACED; 
 	color:#63ACED;
 }
-
 #content-area .main-area .submenu ul li .fa{
 	font-size:20px;
 }
+/*Post*/
+#content-area .main-area .post{
+	overflow:auto;
+}
+
+#content-area .main-area .post .head{
+	margin: 0 0 15px 0 ;
+}
+
+#content-area .main-area .post .head .user-img-container{
+	width:8%;
+	display:inline-block;
+	overflow:auto;
+	float:left;
+}
+#content-area .main-area .post .head .user-img{
+	display:inline-block;
+	float:left;
+	border-radius: 50%;
+	height:40px;
+	width:40px;
+	background: url(https://s3.amazonaws.com/uifaces/faces/twitter/vista/128.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin:0;
+}
+#content-area .main-area .post .head .post-info{
+	display:inline-block;
+	float: left;
+	width:92%;
+}
+#content-area .main-area .post .head::after{
+	content:" ";
+	clear:both;
+	display:table;
+}
+#content-area .main-area .post .head .post-info .user-info{
+	display:block;
+	font-size:14px;
+	margin:4px 0 6px 0;
+}
+#content-area .main-area .post .head .post-info .post-date{
+	display:block;
+	font-size:12px;
+	color:#ABABAB;
+}
+
+#content-area .main-area .post .body {
+	padding:0;
+}
+
+#content-area .main-area .post .body .post-img  img{
+	width: 100%;
+}
+
+#content-area .main-area .post .body .like-icons{
+	width: 100%;
+	padding:15px 0;
+	
+}
+#content-area .main-area .post .body .like-icons .fa{
+	font-size:20px;
+	color:#ABABAB;
+}
+
+#content-area .main-area .post .body .like-icons .fa-thumbs-up{
+	margin:0 15px 0 0;
+}
+#content-area .main-area .post .body .like-icons  span{
+	float:right;
+	display:inline-block;
+}
+
+#content-area .main-area .post .body .like-icons  span a{
+	color:#ABABAB;
+}
+
+#content-area .main-area .post .body .post-comment{
+	background:#E0E0E0;
+	margin:0 -15px 0 -15px;
+	padding:15px;
+}
+
+#content-area .main-area .post .body .post-comment .post-comment-img{
+	width:8%;
+	display:inline-block;
+	/* overflow:auto; */
+	float:left;
+}
+
+#content-area .main-area .post .body .post-comment::after{
+	content:" ";
+	clear:both;
+	display:table;
+}
+
+#content-area .main-area .post .body .post-comment .post-comment-img img{
+	float:left;
+	border-radius:50%;
+	width:40px;
+	height":40px;
+}
+
+
+#content-area .main-area .post .body .post-comment .user-comment-section{
+	display:inline-block;
+	float: left;
+	font-size:14px;
+	width:92%;
+}
+
+#content-area .main-area .post .body .post-comment .user-comment-section .comment-info{
+	margin:5px 0 10px 0;
+	
+}
+
+#content-area .main-area .post .body .post-comment .user-comment-section .comment-info .time{
+	color:#ABABAB;
+	font-size:10px;
+	float:right;	
+}
+
+
+
+/* POST-FORM */
+
+
+
+
+#content-area .main-area .post .body .post-form{
+	
+	padding:15px 0 0 0;
+}
+
+#content-area .main-area .post .body .post-form .post-comment-img{
+	width:8%;
+	display:inline-block;
+	/* overflow:auto; */
+	float:left;
+}
+
+#content-area .main-area .post .body .post-form::after{
+	content:" ";
+	clear:both;
+	display:table;
+}
+
+#content-area .main-area .post .body .post-form .post-comment-img img{
+	float:left;
+	border-radius:50%;
+	width:40px;
+	height":40px;
+}
+
+
+ #content-area .main-area .post .body .post-form .form-info{
+	display:inline-block;
+	float: left;
+	font-size:14px;
+	width:92%;
+	padding:10px 0;
+	border-bottom:1px solid #ABABAB;
+}
+ #content-area .main-area .post .body .post-form .form-info input{
+	width:80%;
+	border: 0 solid white;
+	padding:10px;
+	font-size:18px;
+}
+
+#content-area .main-area .post .body .post-form .form-info input::focus{
+	width:80%;
+	border: 0 solid white;
+	font-size:18px;
+	outline:none;
+}
+
+ #content-area .main-area .post .body .post-form .form-info .comment-icons{
+	float:right;
+	display:inline-block;
+}
+ #content-area .main-area .post .body .post-form .form-info .comment-icons .fa{
+	font-size:20px;
+	margin:0 15px 0 0;
+}
+
+/*#content-area .main-area .post .body .post-comment .user-comment-section .comment-info{
+	margin:5px 0 10px 0;
+	
+} */
+
+
+
+
+
+
+
+
+	
+}
+
+#content-area .main-area .post .body .post-comment{
+	
+}
+
+#content-area .main-area .post .body .post-comment .post-comment-img img{
+	
+}
+
+#content-area .main-area .post .body .post-comment .post-comment-info{
+	
+} */
+
+
+
 
 
 
